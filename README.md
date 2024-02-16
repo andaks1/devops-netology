@@ -18,3 +18,33 @@
 ![fifth](img/01_05.png)
  
 ---
+
+### Расшифрока файла `.gitignore` в директории `Terrafrom`
+```BASH
+**/.terraform/*		# исключить все файлы во всех поддиректориях .terraform
+
+*.tfstate		# исключение любого файла, содержащего в расширении .tfstate
+*.tfstate.*		# исключение любого файла, содержащего любое количество символов до .tfstate. и после.
+
+crash.log		# исключить файлы crash.log
+crash.*.log		# исключить файлы с любым именем между crash. и .log
+
+*.tfvars		# исключить файлы с расширениями .tfvars
+*.tfvars.json		# исключить файлы с расширениями .tfvars.json
+
+
+override.tf 		# исключить все файлы override.tf
+override.tf.json	# исклюить все файлы override.tf.json
+*_override.tf		# исключить все файлы с окончанием имени файла _override.tf
+*_override.tf.json	# исключить все файлы с окончанием имени файла _override.tf.json
+
+# !example_override.tf	# если раскомментировать, то это будет исключением к строкам, описанным выше с файлами _override.tf. То есть исключить все *_override.tf файлы, кроме example_override.tf
+
+# example: *tfplan*	# если раскомментировать, то это исключение всех файлов, содержащих в себе слово tfplan
+
+.terraformrc		# исключение файла .terraformrc
+terraform.rc		# исключение файла terraform.rc
+```
+
+---
+
