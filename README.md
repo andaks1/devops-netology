@@ -42,8 +42,8 @@ override.tf.json	# исклюить все файлы override.tf.json
 
 # example: *tfplan*	# если раскомментировать, то это исключение всех файлов, содержащих в себе слово tfplan
 
-.terraformrc		# исключение файла .terraformrc
-terraform.rc		# исключение файла terraform.rc
+.terraformrc		# исключение файлов .terraformrc
+terraform.rc		# исключение файлов terraform.rc
 ```
 
 ---
