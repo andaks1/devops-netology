@@ -17,4 +17,4 @@ Second line should be commited.
 Результат исключения директории. Коммит есть, директории нет.
 ![fourth](img/01_04.png)
 
-4. 
+New line added
